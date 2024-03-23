@@ -1,0 +1,72 @@
+body{
+    background:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    color: black;
+    margin: 0;
+}
+
+
+header{
+    background: black;
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    color:aliceblue;
+    padding: 20px;
+}
+
+
+#About-Us{
+    background: white;
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    color: black;
+    margin: 20px;
+    display: block;
+    flex-direction: row;
+}
+
+#Section02{
+    background: greenyellow;
+}
+
+
+
+
+footer{
+    background: black;
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    color: white;
+}
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+
+div{
+    background: red;
+    color: black;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    margin: auto;
+}
+
+sub{
+    background-color:red;
+    color: white;
+    display: inline-block;
+    size: 100pc;
+}
+
+p{
+}
