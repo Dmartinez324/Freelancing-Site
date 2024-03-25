@@ -2,7 +2,6 @@ body{
     background:rgb(255, 255, 255);
     font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
     color: black;
-    margin: 0;
 }
 
 
@@ -64,6 +63,20 @@ ul{
 }
 
 
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}  
+
+
+
 li{
     display: inline-block;
     margin-right: 20px;
@@ -72,20 +85,6 @@ li{
 
 
 div{
-    background: red;
     color: black;
-    display: inline-block;
-    width: 100px;
-    height: 20px;
-    margin: auto;
 }
 
-sub{
-    background-color:red;
-    color: white;
-    display: inline-block;
-    size: 100pc;
-}
-
-p{
-}

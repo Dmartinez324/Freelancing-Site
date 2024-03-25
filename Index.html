@@ -5,7 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website!</title>
-    <link rel="stylesheet" href="./style.css">
+    <style>
+      .parent {
+        border: 1px solid black;
+        margin: 1rem;
+        padding: 2rem 2rem;
+        text-align: center;
+        height: auto;
+        width: max;
+        white-space: nowrap;
+      }
+      .child1 {
+        display: inline-block;
+        height: 500px;
+        float: left; 
+        border: 1px solid red;
+        padding: 1rem 1rem;
+        vertical-align: left;
+        width: 500px;
+        word-wrap: break-word;
+        white-space: nowrap;
+      }
+      .child2 {
+        display: inline-block;
+        height: auto;
+        float: right; 
+        border: 1px solid red;
+        padding: 1rem 1rem;
+        vertical-align: middle;
+        word-wrap: break-word;
+      }
+      .clear{
+        clear: both;
+      }
+
+
+
+      body{
+        background:rgb(255, 255, 255);
+        font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+        color: black;
+      }
+
+
+      header{
+        background: black;
+        font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+        color:aliceblue;
+        padding: 20px;
+      }
+
+      #SubheadingP{
+        size: 14pt;
+        color: red;
+      }
+      
+
+      footer{
+      position: fixed;
+      padding: 20px;
+      bottom: 0;
+      margin-right: 100px;
+      padding-right: 10px;
+      width: 1425px;
+      text-align:left;
+      background: black;
+      font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+      color: white;
+      font-size: 24px;
+      }
+
+
+    li{
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+
+
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+
+    /* CSS */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+
+    </style>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
 
@@ -15,21 +148,43 @@
     <header> 
       <nav>
         <ul>
-          <h1>Title</h1>
-          <li><a href="Index.html">ABC Company</a></li>
+          <h1 id="TitleButton"><a href="Index.html">ABC Company</a></h1>
           <li><a href="Login.html">Login</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="Contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section> 
-      <div>a</div>
-      <div>b</div>
-      <div>c</div>
-    </section> 
-    <section> Detecting Changes</section>
 
+
+
+    <section> 
+
+      <div class='parent'>
+
+        <div class='child1'> 
+          <h1 id="SubheadingP">Welcome to ABC Company, <br>where talent meets opportunity!</h1>
+          <p> We are a cutting-edge platform dedicated to empowering individuals to <br>showcase  their skills, connect with clients, and thrive in the world <br>of freelancing.
+
+            At ABC Company, we believe in the power of talent and <br>the potential it holds to transform lives. Whether you're a skilled writer, <br>graphic designer, programmer, or marketer, our platform provides you <br>with the tools and resources you need to unleash your creativity and <br>turn your passion into profit.
+            
+            For clients seeking top-notch talent for their <br>  projects, look no further than ABC Company. Our platform connects you <br>  with a diverse pool of freelancers who are ready to bring your vision to  <br>life. With our easy-to-use interface and transparent communication  <br>channels, finding the perfect freelancer for your project has never been  <br>easier.
+            
+            Join us today and experience the future of freelancing with <br> ABC Company. Let's create, innovate, and succeed together!</p>
+
+          <button class="button-5" role="button"><a href="Login.html">JOIN US</a></button>
+
+
+        </div>
+
+        <div class='child2'> <img src="Images/Background_Image.jpeg" alt="Sheldon"></div>
+
+        <div class="clear"></div> 
+
+      </div>
+
+
+    </section> 
 
     <footer> 
       <div id="Footer-Div">
