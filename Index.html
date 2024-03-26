@@ -34,6 +34,8 @@
         padding: 1rem 1rem;
         vertical-align: middle;
         word-wrap: break-word;
+        width: 500px;
+        height: 500px;
       }
       .clear{
         clear: both;
@@ -57,7 +59,8 @@
 
       #SubheadingP{
         size: 14pt;
-        color: red;
+        color: black;
+        text-align-last: left;
       }
       
 
@@ -90,50 +93,144 @@
     }
 
 
-    /* CSS */
-.button-5 {
-  align-items: center;
-  background-clip: padding-box;
-  background-color: #fa6400;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+/* CSS */
+.button-36 {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
   box-sizing: border-box;
-  color: #fff;
+  color: #FFFFFF;
   cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
   font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
 }
 
-.button-5:hover,
-.button-5:focus {
-  background-color: #fb8332;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
 }
 
-.button-5:hover {
-  transform: translateY(-1px);
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
 }
 
-.button-5:active {
-  background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
+
+label{
+  float: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+}
+
+#firstName{
+
+  font-size: 14px;
+  border-radius: 6px;
+  line-height: 1.5;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+  border: 2px solid #dee1e2;
+  color: rgb(14, 14, 16);
+  background: #dee1e2;
+  display: block;
+  height: 36px;
+  :hover {
+      border-color: #ccc;
+  }
+  :focus{
+      border-color: #9147ff;
+      background: #fff;
+  }
+                
+}
+
+#lastName{
+
+font-size: 14px;
+border-radius: 6px;
+line-height: 1.5;
+padding: 5px 10px;
+margin-bottom: 10px;
+transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+border: 2px solid #dee1e2;
+color: rgb(14, 14, 16);
+background: #dee1e2;
+display: block;
+height: 36px;
+:hover {
+    border-color: #ccc;
+}
+:focus{
+    border-color: #9147ff;
+    background: #fff;
+}
+              
+}
+
+
+
+#email{
+
+font-size: 14px;
+border-radius: 6px;
+line-height: 1.5;
+padding: 5px 10px;
+margin-bottom: 10px;
+transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+border: 2px solid #dee1e2;
+color: rgb(14, 14, 16);
+background: #dee1e2;
+display: block;
+height: 36px;
+:hover {
+    border-color: #ccc;
+}
+:focus{
+    border-color: #9147ff;
+    background: #fff;
+}
+              
+}
+
+
+
+#password{
+
+font-size: 14px;
+border-radius: 6px;
+line-height: 1.5;
+padding: 5px 10px;
+margin-bottom: 10px;
+transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+border: 2px solid #dee1e2;
+color: rgb(14, 14, 16);
+background: #dee1e2;
+display: block;
+height: 36px;
+:hover {
+    border-color: #ccc;
+}
+:focus{
+    border-color: #9147ff;
+    background: #fff;
+}
+              
+}
+
+#BigParagraph{
+  line-height: 35px;
 }
 
 
@@ -148,10 +245,10 @@
     <header> 
       <nav>
         <ul>
-          <h1 id="TitleButton"><a href="Index.html">ABC Company</a></h1>
-          <li><a href="Login.html">Login</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+          <a href="Index.html"><h1 id="TitleButton">ABC Company</h1></a>
+          <a href="Login.html"><li>Login / Sign Up</li></a>
+          <a href="About.html"><li>About Us</li></a>
+          <a href="Contact.html"><li>Contact Us</li></a>
         </ul>
       </nav>
     </header>
@@ -164,20 +261,58 @@
 
         <div class='child1'> 
           <h1 id="SubheadingP">Welcome to ABC Company, <br>where talent meets opportunity!</h1>
-          <p> We are a cutting-edge platform dedicated to empowering individuals to <br>showcase  their skills, connect with clients, and thrive in the world <br>of freelancing.
+          <p id="BigParagraph">Your go-to platform for freelancers and businesses alike. We <br>provide a dynamic marketplace where Grand Canyon University <br>students can showcase their skills and connect with clients <br> seeking top talent. Whether you're a student looking to kickstart your <br>entrepreneurial journey or a business in need of skilled professionals,<br> ABC Company has you covered. Join us today and unlock endless <br>opportunities for growth and success</p>
 
-            At ABC Company, we believe in the power of talent and <br>the potential it holds to transform lives. Whether you're a skilled writer, <br>graphic designer, programmer, or marketer, our platform provides you <br>with the tools and resources you need to unleash your creativity and <br>turn your passion into profit.
-            
-            For clients seeking top-notch talent for their <br>  projects, look no further than ABC Company. Our platform connects you <br>  with a diverse pool of freelancers who are ready to bring your vision to  <br>life. With our easy-to-use interface and transparent communication  <br>channels, finding the perfect freelancer for your project has never been  <br>easier.
-            
-            Join us today and experience the future of freelancing with <br> ABC Company. Let's create, innovate, and succeed together!</p>
+          <a href="Login.html"><button class="button-36" role="button">JOIN US</button></a>
 
-          <button class="button-5" role="button"><a href="Login.html">JOIN US</a></button>
+
 
 
         </div>
 
-        <div class='child2'> <img src="Images/Background_Image.jpeg" alt="Sheldon"></div>
+        <div class='child2'>
+           <h1><u>LOGIN HERE</u></h1>
+           <label for="Name">First Name:</label>
+           <input type="text" id="firstName" name="Name" placeholder="First Name">
+           <label for="Name">Last Name:</label>
+           <input type="text" id="lastName" name="Name" placeholder="Last Name">
+           <label for="Name">GCU Email:</label>
+           <input type="text" id="email" name="Name" placeholder="Email Address">
+           <label for="Name">Password:</label>
+           <input type="password" id="password" name="Name" placeholder="Super Secret Password">
+           <button class="button-36" onclick="storeDataAndRedirect()">Sign Up</button>
+          </div>
+
+          <script>
+            function storeDataAndRedirect() {
+                // Get input field values
+                var firstName = document.getElementById("firstName").value;
+                var lastName = document.getElementById("lastName").value;
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+
+                if (!validateEmail(email)) {
+                    alert("Please enter a valid email from the 'my.gcu.edu' domain.");
+                    return;
+                }
+    
+                // Store data in session storage
+                sessionStorage.setItem('firstName', firstName);
+                sessionStorage.setItem('lastName', lastName);
+                sessionStorage.setItem('email', email);
+                sessionStorage.setItem('password', password);
+    
+                // Redirect to the next page
+                window.location.href = "Catalog.html";
+            }
+
+
+            function validateEmail(email) {
+                // Regular expression to match email addresses from "my.gcu.edu" domain
+                var regex = /^[a-zA-Z0-9._%+-]+@my\.gcu\.edu$/;
+                return regex.test(email);
+            }
+        </script>
 
         <div class="clear"></div> 
 
@@ -197,3 +332,7 @@
 
  
     
+
+
+
+
