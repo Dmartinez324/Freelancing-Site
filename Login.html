@@ -5,34 +5,279 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website!</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <!-- <link rel="stylesheet" href="./style.css"> -->
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
 
+  <style>
+  body{
+    background:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    color: black;
+    margin: 0;
+}
 
-  <body>
 
-    <header> 
+header{
+    background: black;
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    color:aliceblue;
+    padding: 20px;
+}
+
+.my-header{
+    background: black, transparent;
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    color:aliceblue;
+    padding: 20px;
+   
+}
+
+
+#About-Us{
+    background: white;
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    color: black;
+    margin: 20px;
+    display: block;
+    flex-direction: row;
+}
+
+#Section02{
+    background: greenyellow;
+}
+
+
+footer{
+    background: black;
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    color: white;
+}
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.secondary{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    background: black;
+    color: white;
+}
+
+sub{
+    background-color:red;
+    color: white;
+    display: inline-block;
+    size: 100pc;
+}
+.input-box{
+
+width: 50%;
+height: 50px;
+background: slategray;
+margin: 30px 0;
+border-radius: 40px;
+
+}
+.register-link{
+width: 50%;
+height: 50px;
+background: slategray;
+margin: 30px 0;
+}
+.remember-forgot{
+width: 50%;
+height: 50px;
+background: slategray;
+color: white;
+margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255);
+    border-radius: 40px;
+    padding: 20 px 75px 20px 20px;
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+*/
+.my-class{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2,#c9d6ff );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:100vh
+
+}
+.container{
+    background-color: rgb(246, 245, 245);
+    border-radius: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768 px;
+    max-width: 100%;
+    min-height: 480px;
+}
+.container span{
+    font-size: 12px;
+
+}
+.container a{
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+.container button{
+    background-color: #512da8;
+    color: white;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.container button.hidden{
+    background-color: transparent;
+    border-color: white;
+
+}
+
+.container form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+
+}
+
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.sign-in{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+
+.social-icons{
+    margin: 20px 0;
+}
+
+.social-icons a{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+p{
+}
+
+
+  </style>
+
+
+  <body class = "my-class">
+
+    <header class = "my-header">
       <nav>
         <ul>
-          <a href="Index.html"><h1 id="TitleButton">ABC Company</h1></a>
-          <a href="Login.html"><li>Login / Sign Up</li></a>
-          <a href="About.html"><li>About Us</li></a>
-          <a href="Contact.html"><li>Contact Us</li></a>
+          <h1>Login</h1>
+          <li><a href="Index.html">ABC Company</a></li>
+          <li><a href="Login.html">Login</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section> 
-      <div>a</div>
-      <div>b</div>
-      <div>c</div>
-    </section> 
-    <section> <h1>Login</h1></section>
-    <p> Hello </p>
-    <footer> Footer</footer>
-
+    <br>
   </body>
+
+  <body class="my-class">
+    <div class="container" id="container">
+      <div class="form-container sign-in">
+          <form>
+              <h1>Sign In</h1>
+              <div class="social-icons">
+                  <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <span>or use your email password</span>
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password">
+              <a href="#"><u>Forgot Your Password?</u></a>
+              <button>Sign In</button>
+          </form>
+      </div>
+      <div class="container">
+      </div>
+  </div>
+<br>
+  <footer> Footer</footer>
+
+    </body>
+
+   </div>
+
 </html>
 
  
-    
+   
+
+
+
+
